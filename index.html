@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Microphone Input Monitor</title>
+    <script type="text/javascript" src="assets/volume-meter.js"></script>
+    <script type="text/javascript" src="assets/jscolor.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/pure-min.css">
+    <style type="text/css">
+        #mic-activity { 
+            color: #00b140;
+            padding: 40px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #00b140;
+            font-size: 55pt; 
+            margin-bottom: 15px;
+        }
+
+        #mic-activity i {
+            text-shadow: 1px 1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, -1px -1px 0 #000;
+        }
+
+        .mic-on { 
+            color: #CE0202 !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="mic-activity"><div><i class="fa fa-microphone" aria-hidden="true"></i></div></div>
+    <form class="pure-form pure-form-aligned">
+        <fieldset>
+            <div class="pure-control-group">
+                <label for="level">Activity Level</label>
+                <input id="level" type="range" min="0" max="1" step="0.01" list="tickmarks1">
+                <span id="level-value">0.5</span>
+                <datalist id="tickmarks1">
+                    <option value="0" label="0">
+                    <option value="0.1">
+                    <option value="0.2">
+                    <option value="0.3">
+                    <option value="0.4">
+                    <option value="0.5" label="0.5">
+                    <option value="0.6">
+                    <option value="0.7">
+                    <option value="0.8">
+                    <option value="0.9">
+                    <option value="1" label="1">
+                </datalist>
+            </div>
+            <div class="pure-control-group">
+                <label for="timeout">Activity Timeout</label>
+                <input id="timeout" type="range" min="10" max="1000" step="10" list="tickmarks2">
+                <span id="timeout-value">500ms</span>
+                <datalist id="tickmarks2">
+                    <option value="10" label="10">
+                    <option value="100">
+                    <option value="200">
+                    <option value="300">
+                    <option value="400">
+                    <option value="500" label="500">
+                    <option value="600">
+                    <option value="700">
+                    <option value="800">
+                    <option value="900">
+                    <option value="1000" label="1000">
+                </datalist>
+            </div>
+            <div class="pure-control-group">
+                <label for="bg-color">Background Color</label>
+                <input id="bg-color" class="jscolor" value="00b140">
+            </div>
+            <div class="pure-control-group">
+                <label for="active-color">Activity Color</label>
+                <input id="active-color" class="jscolor" value="CE0202">
+            </div>
+            <div class="pure-control-group">
+                <label for="fontsize">Icon Size</label>
+                <input id="fontsize" type="range" min="10" max="100" step="1">
+                <span id="fontsize-value">55pt</span>
+            </div>
+
+            <div class="pure-controls">
+                <button id="reset" class="pure-button">Reset to default values</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
