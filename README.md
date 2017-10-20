@@ -68,3 +68,5 @@ If you wish to display this icon on your stream, here is how you set it up in OB
 # Acknowledgment
 
 Big thanks to [Chris Wilson](https://github.com/cwilso) and his work on his [volume-meter](https://github.com/cwilso/volume-meter/). This project has greatly helped in the development of this.
+
+And a shoutout to GinTatsu for the idea and "funding" of this project.
