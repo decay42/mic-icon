@@ -64,3 +64,7 @@ If you wish to display this icon on your stream, here is how you set it up in OB
 5. Set the chroma key color type to "custom"
 6. Click "Choose color" and put your background color (default: #00b140) in the "HTML:" input field
 7. Press Okay/Close a couple of times and position your capture where you want it - you are done
+
+# Acknowledgment
+
+Big thanks to [Chris Wilson](https://github.com/cwilso) and his work on his [volume-meter](https://github.com/cwilso/volume-meter/). This project has greatly helped in the development of this.
