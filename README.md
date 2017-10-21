@@ -10,6 +10,8 @@ You can simply clone the project and open the index.html locally and it will wor
 
 Alternatively, just run it on a webserver and the permission will be saved.
 
+*Only tested in Chrome. Compatibility with other browsers not guaranteed.*
+
 # Settings
 
 *All settings are automatically saved and reloaded every time you open this page.*
